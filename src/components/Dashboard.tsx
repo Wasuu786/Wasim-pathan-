@@ -130,13 +130,13 @@ export function Dashboard({ user, onNavigate }: DashboardProps) {
                 <Plane className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl text-blue-600">TravelMate</h1>
-                <p className="text-xs text-gray-500">Student Travel Platform</p>
+                <h1 className="text-xl text-blue-600">Tripzy</h1>
+                <p className="text-xs text-gray-500">Tripzy made travel esay</p>
               </div>
             </div>
             <div className="flex items-center space-x-3">
               <div className="text-right">
-                <p className="text-sm">Welcome back,</p>
+                <p className="text-sm">Welcome back,guys..!!</p>
                 <p className="text-blue-600">{user.name}</p>
               </div>
               {user.studentId && (
@@ -161,7 +161,7 @@ export function Dashboard({ user, onNavigate }: DashboardProps) {
           <div className="absolute inset-0 flex items-center justify-center text-center text-white p-6">
             <div>
               <h2 className="text-3xl mb-4">Ready for your next adventure?</h2>
-              <p className="text-lg mb-6">Discover budget-friendly destinations with fellow travelers</p>
+              <p className="text-lg mb-6">Destination to destination with us..!!</p>
               <Button 
                 onClick={() => onNavigate('location')}
                 className="bg-white text-blue-600 hover:bg-gray-100"

@@ -41,7 +41,7 @@ export function LoginPage({ onLogin, onSwitchToSignup }: LoginPageProps) {
             <div className="bg-blue-600 p-3 rounded-full">
               <Plane className="h-8 w-8 text-white" />
             </div>
-            <h1 className="text-3xl text-blue-600">TravelMate</h1>
+            <h1 className="text-3xl text-blue-600">Tripzy</h1>
           </div>
           <p className="text-gray-600">Your ultimate travel companion for students & hostellers</p>
           
@@ -70,7 +70,7 @@ export function LoginPage({ onLogin, onSwitchToSignup }: LoginPageProps) {
         <Card className="shadow-lg border-0">
           <CardHeader className="text-center">
             <CardTitle>Welcome Back!</CardTitle>
-            <CardDescription>Sign in to your TravelMate account</CardDescription>
+            <CardDescription>Sign in to your Tripzy account</CardDescription>
           </CardHeader>
           
           <form onSubmit={handleSubmit}>
