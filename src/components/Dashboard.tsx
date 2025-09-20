@@ -153,7 +153,7 @@ export function Dashboard({ user, onNavigate }: DashboardProps) {
         {/* Hero Section */}
         <div className="relative h-64 rounded-xl overflow-hidden mb-8">
           <ImageWithFallback
-            src= "img/group-sporty-people-walks-mountains-600nw-2049380855.jpg"
+            src="/img/15 Fun Things To Do In Palolem Beach, South Goa - Trot_World.jpg"
             alt="Budget travel destinations"
             className="w-full h-full object-cover"
           />
