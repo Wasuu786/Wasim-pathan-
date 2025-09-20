@@ -5,6 +5,7 @@ import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { ArrowLeft, Search, MapPin, Star, IndianRupee, Compass } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { destinations } from '../../img/data.js'
 
 type LocationSelectorProps = {
   selectedLocation: string;
@@ -15,74 +16,8 @@ type LocationSelectorProps = {
 export function LocationSelector({ selectedLocation, onLocationChange, onNavigate }: LocationSelectorProps) {
   const [searchQuery, setSearchQuery] = useState('');
 
-  const popularDestinations = [
-    {
-      name: 'Goa',
-      description: 'Beaches, nightlife, and Portuguese heritage',
-      budget: '₹2,000-4,000/day',
-      rating: 4.8,
-      image: 'img/15 Fun Things To Do In Palolem Beach, South Goa - Trot_World.jpg',
-      tags: ['Beach', 'Party', 'Budget-friendly']
-    },
-    {
-      name: 'Manali',
-      description: 'Mountains, adventure sports, and cool weather',
-      budget: '₹1,500-3,000/day',
-      rating: 4.7,
-      image: 'img/houses-surrounded-by-green-trees-in-manali-during-daytime.DAktkgeM_90jep.jpg',
-      tags: ['Mountains', 'Adventure', 'Scenic']
-    },
-    {
-      name: 'Rishikesh',
-      description: 'Yoga capital, river rafting, and spiritual vibes',
-      budget: '₹1,000-2,500/day',
-      rating: 4.6,
-      image: 'img/rishikesh-yoga-city-india-gange-600nw-1137990866.webp',
-      tags: ['Spiritual', 'Adventure', 'Budget']
-    },
-    {
-      name: 'Udaipur',
-      description: 'City of lakes, palaces, and royal heritage',
-      budget: '₹2,500-4,500/day',
-      rating: 4.9,
-      image: 'img/b3.jpg',
-      tags: ['Heritage', 'Lakes', 'Culture']
-    },
-    {
-      name: 'Hampi',
-      description: 'Ancient ruins, boulders, and backpacker paradise',
-      budget: '₹800-2,000/day',
-      rating: 4.5,
-      image: 'img/India-for-Beginners-custom-tours-6.jpg',
-      tags: ['History', 'Backpacking', 'UNESCO']
-    },
-    {
-      name: 'Kasol',
-      description: 'Mini Israel, trekking, and hippie culture',
-      budget: '₹1,200-2,800/day',
-      rating: 4.4,
-      image: 'img/360_F_383581969_qisnIIKvUr9GmLKZbaTHzpCTXBvwpTsV.jpg',
-      tags: ['Trekking', 'Culture', 'Nature']
-    },
-    {
-      name: 'Pushkar',
-      description: 'Holy lake, camel safari, and desert vibes',
-      budget: '₹1,000-2,200/day',
-      rating: 4.3,
-      image: 'img/Places-to-visit-in-Pushkar-in-1-day-00063.jpg',
-      tags: ['Desert', 'Culture', 'Spiritual']
-    },
-    {
-      name: 'Vashisht',
-      description: 'Hot springs, mountain views, and peaceful atmosphere',
-      budget: '₹900-2,000/day',
-      rating: 4.5,
-      image: 'img/b-vashisht.jpg',
-      tags: ['Hot Springs', 'Mountains', 'Peaceful']
-    }
-  ];
-
-  const filteredDestinations = popularDestinations.filter(dest =>
+  // ✅ filter using imported destinations
+  const filteredDestinations = destinations.filter(dest =>
     dest.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
     dest.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
     dest.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()))
@@ -168,8 +103,9 @@ export function LocationSelector({ selectedLocation, onLocationChange, onNavigat
                 onClick={() => handleLocationSelect(destination.name)}
               >
                 <div className="relative h-48">
+                  {/* ✅ Now using image from data.js */}
                   <ImageWithFallback
-                    src={`https://images.unsplash.com/photo-1506905925346-21bda4d32df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400`}
+                    src={destination.image}
                     alt={destination.name}
                     className="w-full h-full object-cover rounded-t-lg"
                   />
