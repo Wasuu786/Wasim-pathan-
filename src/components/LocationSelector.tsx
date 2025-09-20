@@ -21,7 +21,7 @@ export function LocationSelector({ selectedLocation, onLocationChange, onNavigat
       description: 'Beaches, nightlife, and Portuguese heritage',
       budget: '₹2,000-4,000/day',
       rating: 4.8,
-      image: 'goa beach sunset',
+      image: 'img/15 Fun Things To Do In Palolem Beach, South Goa - Trot_World.jpg',
       tags: ['Beach', 'Party', 'Budget-friendly']
     },
     {
@@ -29,7 +29,7 @@ export function LocationSelector({ selectedLocation, onLocationChange, onNavigat
       description: 'Mountains, adventure sports, and cool weather',
       budget: '₹1,500-3,000/day',
       rating: 4.7,
-      image: 'manali mountains snow',
+      image: 'img/houses-surrounded-by-green-trees-in-manali-during-daytime.DAktkgeM_90jep.jpg',
       tags: ['Mountains', 'Adventure', 'Scenic']
     },
     {
@@ -37,7 +37,7 @@ export function LocationSelector({ selectedLocation, onLocationChange, onNavigat
       description: 'Yoga capital, river rafting, and spiritual vibes',
       budget: '₹1,000-2,500/day',
       rating: 4.6,
-      image: 'rishikesh ganges river',
+      image: 'img/rishikesh-yoga-city-india-gange-600nw-1137990866.webp',
       tags: ['Spiritual', 'Adventure', 'Budget']
     },
     {
@@ -45,7 +45,7 @@ export function LocationSelector({ selectedLocation, onLocationChange, onNavigat
       description: 'City of lakes, palaces, and royal heritage',
       budget: '₹2,500-4,500/day',
       rating: 4.9,
-      image: 'udaipur city palace lake',
+      image: 'img/b3.jpg',
       tags: ['Heritage', 'Lakes', 'Culture']
     },
     {
@@ -53,7 +53,7 @@ export function LocationSelector({ selectedLocation, onLocationChange, onNavigat
       description: 'Ancient ruins, boulders, and backpacker paradise',
       budget: '₹800-2,000/day',
       rating: 4.5,
-      image: 'hampi ancient ruins',
+      image: 'img/India-for-Beginners-custom-tours-6.jpg',
       tags: ['History', 'Backpacking', 'UNESCO']
     },
     {
@@ -61,7 +61,7 @@ export function LocationSelector({ selectedLocation, onLocationChange, onNavigat
       description: 'Mini Israel, trekking, and hippie culture',
       budget: '₹1,200-2,800/day',
       rating: 4.4,
-      image: 'kasol valley mountains',
+      image: 'img/360_F_383581969_qisnIIKvUr9GmLKZbaTHzpCTXBvwpTsV.jpg',
       tags: ['Trekking', 'Culture', 'Nature']
     },
     {
@@ -69,7 +69,7 @@ export function LocationSelector({ selectedLocation, onLocationChange, onNavigat
       description: 'Holy lake, camel safari, and desert vibes',
       budget: '₹1,000-2,200/day',
       rating: 4.3,
-      image: 'pushkar rajasthan camel',
+      image: 'img/Places-to-visit-in-Pushkar-in-1-day-00063.jpg',
       tags: ['Desert', 'Culture', 'Spiritual']
     },
     {
@@ -77,7 +77,7 @@ export function LocationSelector({ selectedLocation, onLocationChange, onNavigat
       description: 'Hot springs, mountain views, and peaceful atmosphere',
       budget: '₹900-2,000/day',
       rating: 4.5,
-      image: 'vashisht hot springs',
+      image: 'img/b-vashisht.jpg',
       tags: ['Hot Springs', 'Mountains', 'Peaceful']
     }
   ];
