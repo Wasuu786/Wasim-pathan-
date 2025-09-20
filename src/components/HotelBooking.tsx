@@ -8,6 +8,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { ArrowLeft, Hotel, Star, Wifi, Car, Coffee, Users, MapPin, IndianRupee, Calendar } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
+
+
 type HotelBookingProps = {
   location: string;
   travelers: string[];
