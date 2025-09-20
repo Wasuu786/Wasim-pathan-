@@ -33,6 +33,9 @@ export default function App() {
   // Helper to ensure correct type for onNavigate
   const handleNavigate = (page: string) => setCurrentPage(page as AppPage);
   const [currentPage, setCurrentPage] = useState<AppPage>('login');
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+
+export default function App() {
   const [user, setUser] = useState<User | null>(null);
   const [selectedLocation, setSelectedLocation] = useState('');
   const [travelers, setTravelers] = useState<string[]>([]);
