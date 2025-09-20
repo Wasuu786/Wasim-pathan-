@@ -153,7 +153,7 @@ export function Dashboard({ user, onNavigate }: DashboardProps) {
         {/* Hero Section */}
         <div className="relative h-64 rounded-xl overflow-hidden mb-8">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1659015637223-5fc3f2f5d8f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxpbmRpYW4lMjBob3N0ZWwlMjBidWRnZXQlMjB0cmF2ZWx8ZW58MXx8fHwxNzU4MzE0MzM1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            src="img/group-sporty-people-walks-mountains-600nw-2049380855.jpg"
             alt="Budget travel destinations"
             className="w-full h-full object-cover"
           />
